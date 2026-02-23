@@ -1,36 +1,62 @@
-🔹 Day 1 — VM Bisa Diakses dari Internet
-🎯 Target:
-VM Azure bisa ping dari laptop kamu
-🛠️ Task:
-•	Buat VM Linux
-•	Assign Public IP
-•	Pastikan bisa akses ke VM
-🧠 Fokus mikir:
-•	IP publik nempel ke mana?
-•	Akses lewat rule apa?
-📌 Output:
-•	Screenshot Akses VM
-•	Catatan: “Akses lewat NSG inbound SSH”
-Step by Step :
-1.	Buat VM Linux
-![gambartes](screenshoots/Screenshot_1.jpg)
+# 🚀 Day 1 — Azure VM with Public IP
 
- 
- 
-DISK
- 
-Networking (VNET dapat buat dulu atau gunakan VNET Baru)
-Network security group = basic (buat NSG baru)
- 
-Next, create and review
- 
-Hasilnya :
- 
+---
 
+## 🎯 Objective
+Deploy a Linux Virtual Machine in Azure and access it from the internet using SSH.
 
-2.	Akses VM Linux menggunakan Public IP
- 
- 
-Sukses Akses VM
- 
+---
 
+## 🛠 Lab Tasks
+- Create Linux VM
+- Assign Public IP
+- Configure Network Security Group (Allow SSH - Port 22)
+- Validate remote access
+
+---
+
+## 🧠 Key Concept
+
+- Public IP is attached to the VM NIC
+- Inbound traffic is controlled by NSG rules
+- Without NSG allow rule → VM is not reachable
+
+---
+
+## 🏗 Step 1 — Create Linux VM
+
+![Create VM](../screenshots/Screenshot_1.jpg)
+
+> Azure Portal → Virtual Machines → Create VM
+
+---
+
+## 🔐 Step 2 — Configure NSG Rule
+
+![NSG Rule](../screenshots/nsg-rule.jpg)
+
+> Allow inbound SSH (Port 22) from your public IP.
+
+---
+
+## ✅ Validation
+
+Successfully accessed VM via SSH using public IP.
+
+---
+
+## 🏢 Real-World Mapping
+
+| Azure Component | On-Prem Equivalent |
+|----------------|-------------------|
+| Public IP      | WAN IP |
+| NSG            | Firewall / ACL |
+| VNet           | VLAN |
+
+---
+
+## 💡 Lessons Learned
+
+- Public IP alone is not enough
+- NSG is mandatory for inbound access
+- Azure security model is deny-by-default
