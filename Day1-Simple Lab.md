@@ -1,3 +1,6 @@
+![Azure](https://img.shields.io/badge/Azure-Networking-blue)
+![Level](https://img.shields.io/badge/Level-AZ104-green)
+
 # 🚀 Day 1 — Azure VM with Public IP
 
 ---
