@@ -13,7 +13,7 @@ VM Azure bisa ping dari laptop kamu
 •	Catatan: “Akses lewat NSG inbound SSH”
 Step by Step :
 1.	Buat VM Linux
-(../screenshoot/Screenshot_1.jpg)
+![gambartes](../screenshoot/Screenshot_1.jpg)
 
  
  
