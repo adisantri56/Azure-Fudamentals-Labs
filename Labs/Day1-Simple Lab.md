@@ -31,19 +31,24 @@ Deploy a Linux Virtual Machine in Azure and access it from the internet using SS
 ![](../Image/d1-created-vm1.jpg)
 ### Select Resource Group
 ![](../Image/d1-created-vm2.jpg)
-
 ![](../Image/d1-created-vm3.jpg)
-> Disk
+### Select Disk
 ![](../Image/d1-created-vm4.jpg)
+### For NSG we can create and choose basic or use the existing one
 ![](../Image/d1-created-vm5.jpg)
+### Create and review
 ![](../Image/d1-created-vm6.jpg)
+### Result
 ![](../Image/d1-created-vm7.jpg)
 ---
 
-## 🔐 Step 2 — Configure NSG Rule
-
-![NSG Rule](../screenshots/nsg-rule.jpg)
-
+## 🔐 Step 2 — Access VM using Public IP
+### Azure Portal → Virtual Machines → Overview
+![](../Image/d1-access-vm1.jpg)
+### Use Putty or other toll to access VM via SSH
+![](../Image/d1-access-vm2.jpg)
+### Result
+![](../Image/d1-access-vm3.jpg)
 > Allow inbound SSH (Port 22) from your public IP.
 
 ---
