@@ -27,11 +27,17 @@ Deploy a Linux Virtual Machine in Azure and access it from the internet using SS
 ---
 
 ## 🏗 Step 1 — Create Linux VM
+### Azure Portal → Virtual Machines → Create VM
+![](../Image/d1-created-vm1.jpg)
+### Select Resource Group
+![](../Image/d1-created-vm2.jpg)
 
-(../Image/d1-created-vm1.jpg)
-
-> Azure Portal → Virtual Machines → Create VM
-
+![](../Image/d1-created-vm3.jpg)
+> Disk
+![](../Image/d1-created-vm4.jpg)
+![](../Image/d1-created-vm5.jpg)
+![](../Image/d1-created-vm6.jpg)
+![](../Image/d1-created-vm7.jpg)
 ---
 
 ## 🔐 Step 2 — Configure NSG Rule
