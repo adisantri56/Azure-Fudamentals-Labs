@@ -1,2 +1,2 @@
-# Azure-Fudamentals-Labs
-Azure-Fudamentals-Labs
+# Azure-Administrator-and-Lab
+Azure-Administrator-and-Lab
