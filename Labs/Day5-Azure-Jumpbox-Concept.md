@@ -6,7 +6,7 @@
 ---
 
 ## 🎯 Objective
-Access a private VM through a public VM using SSH (Jumpbox/Bastion concept).
+Access a private VM through a public VM using SSH (Jumpbox concept).
 
 ---
 
@@ -24,10 +24,10 @@ Access a private VM through a public VM using SSH (Jumpbox/Bastion concept).
 - Jumpbox = intermediary VM to access private resources
 - Private VM should not be exposed directly to internet
 - Access flow:
-  
+
   **User → Public VM (Jumpbox) → Private VM**
 
-- This concept is commonly replaced by **Azure Bastion (managed service)**
+- This concept is commonly replaced by Azure Bastion
 
 ---
 
@@ -59,3 +59,5 @@ From your local machine:
 
 ```bash
 ssh azureadmin@<public-ip-vm-a>
+![](../Image/d5-jumpbox-3.jpg)
+> Successfully connected to Jumpbox VM
