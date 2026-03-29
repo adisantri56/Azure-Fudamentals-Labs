@@ -55,9 +55,43 @@ Access a private VM through a public VM using SSH (Jumpbox concept).
 
 ## 🌐 Step 3 — SSH to Jumpbox (VM A)
 
-From your local machine:
-
-```bash
-ssh azureadmin@<public-ip-vm-a>
+SSH using public IP to VM A 
 ![](../Image/d5-jumpbox-3.jpg)
+
 > Successfully connected to Jumpbox VM
+
+---
+
+
+## 🌐 Step 4 — SSH Jumpbox to Private VM (VM B)
+
+ssh azureadmin@10.10.1.5
+![](../Image/d5-jumpbox-4.jpg)
+
+> Successfully connected to VM B via Jumpbox
+
+## ✅ Validation
+
+- Able to SSH to VM A from internet
+- Able to SSH from VM A to VM B
+- VM B is not directly accessible from internet
+
+---
+
+## 🏢 Real-World Mapping
+
+| Azure Component | On-Prem Equivalent |
+| --------------- | ------------------ |
+| Jumpbox VM      | Jump Server        |
+| Private VM      | Internal Server    |
+| NSG             | Firewall / ACL     |
+
+
+---
+
+## 💡 Lessons Learned
+
+- Never expose all VMs directly to internet
+- Use Jumpbox or Bastion for secure access
+- This design improves security and control
+
